@@ -1,0 +1,179 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #242424;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App {
+  display: grid;
+  justify-items: center;
+  margin: auto;
+}
+
+.App-header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  grid-column: 1/5;
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* File Upload Section */
+.form input[type="file"] {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* File Data Display */
+.file-data {
+  background-color: #242424; /* White background for the box */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+  overflow-x: auto; /* Horizontal scrolling if needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 400px; /* Limit the height to a fixed value */
+  border: 2px solid #ddd; /* Border to give it a box-like feel */
+  margin-top: 20px; /* Space between the box and other content */
+  text-align: center;
+}
+
+.file-data h3 {
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.file-data table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.file-data th, .file-data td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* QR Code Scanner Section */
+.qr-scanner {
+  margin-left: 30px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.qr-scanner video {
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.qr-scanner canvas {
+  display: none;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: #333;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  align-items: center;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 3em;
+  color: #FC7504;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.modal h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.modal button {
+  margin-top: 20px;
+  background-color: #242424;
+}
+
+.modal button:hover{
+  background-color: red;
+}
+
+.modal p{
+  font-size: 1.5rem;
+}
+
+
+/* Default Modal Title */
+.modal-title {
+  font-size: 1.8em;
+  text-align: center;
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Duplicate Status */
+.modal-title.duplicate {
+  color: red; /* Default color */
+}
+
+/* Success Status */
+.modal-title.success {
+  color: green; /* Default color */
+}
