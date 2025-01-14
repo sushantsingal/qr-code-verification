@@ -193,10 +193,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
+        <h1>Tech Talk</h1>
       </header>
 
-      <h1>Event Check-In</h1>
+      <h2>Event Check-In</h2>
 
         {/* File Upload */}
         <div className="form">
