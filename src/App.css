@@ -238,6 +238,10 @@ button:hover {
     grid-column: 1/2;
     margin-left: 5px;
   }
+
+  .qr-scanner video{
+    width: 300px;
+  }
 }
 
 @media (max-width: 480px) {
