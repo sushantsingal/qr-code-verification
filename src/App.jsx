@@ -198,8 +198,16 @@ function App() {
 
       <h2>Event Check-In</h2>
 
+      {/* QR Code Scanner */}
+      <div className="qr-scanner">
+          <h3>Scan Here!!</h3>
+          <video ref={videoRef} width="300" height="200" autoPlay></video>
+          <canvas ref={canvasRef} width="300" height="200" style={{ display: "none" }}></canvas>
+        </div>
+
         {/* File Upload */}
         <div className="form">
+          <h3>Upload Excel Data</h3>
           <input type="file" accept=".xlsx, .xls, .csv, .json" onChange={handleFileUpload} />
 
           {/* Toggle Button for File Data
@@ -240,21 +248,7 @@ function App() {
             </div>
           )}
         </div>
-
-        
-
-
-        {/* QR Code Scanner */}
-        <div className="qr-scanner">
-          <video ref={videoRef} width="300" height="200" autoPlay></video>
-          <canvas ref={canvasRef} width="300" height="200" style={{ display: "none" }}></canvas>
-        </div>
-
-        
-        
-
-        
-
+                  
         {/* Verification Modal */}
         {showModal && (
           <div className="modal">
