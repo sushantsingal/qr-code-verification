@@ -42,8 +42,8 @@ h2 {
 h1{
   background-size: cover;
   /* background-image: linear-gradient(to left, #FF5800, #fff);
-  background-clip: text;
-  color: transparent; */
+  background-clip: text; */
+  color: #fff;
   font-family: Rocky-Billy;
   margin: 0;
   padding-top: 70px;
@@ -53,6 +53,7 @@ h1{
 .form input[type="file"] {
   padding: 10px;
   font-size: 1.2em;
+  color: #fff;
   cursor: pointer;
   max-width: 90%; /* Restrict width for smaller screens */
 }
